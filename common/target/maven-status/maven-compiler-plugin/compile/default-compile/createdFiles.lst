@@ -1,0 +1,3 @@
+com\isaiah\common\App.class
+com\isaiah\common\models\Payment.class
+com\isaiah\common\models\Order.class
