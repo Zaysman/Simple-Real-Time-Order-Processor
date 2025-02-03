@@ -1,9 +1,9 @@
-#Server details
+#Order-Service Server details
 server:
  port: 9191
  
  
- 
+#Order-Service Producer details
 spring:
  kafka:
   producer:
