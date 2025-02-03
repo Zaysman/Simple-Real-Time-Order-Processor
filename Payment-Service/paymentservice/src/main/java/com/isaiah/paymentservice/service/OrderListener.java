@@ -17,7 +17,7 @@ public class OrderListener {
 	public void consumeCustomer(Order order) {
 		System.out.println("Order-Consumer consumes the following Order: [" + order.toString() + "]");
 		Payment payment = new Payment(8675309, order.getCustomer(), order.getPrice());
-		paymentPublisher.sendPaymentToTopic(payment);
+		paymentPublisher.sendPaymentToTopic(payment); //Sent The payment to the payment topic
 	}
 
 }

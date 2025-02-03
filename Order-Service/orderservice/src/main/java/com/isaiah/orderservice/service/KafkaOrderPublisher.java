@@ -28,7 +28,7 @@ public class KafkaOrderPublisher {
 	
 	
 	public void sendOrderToTopic(Order order) {
-		CompletableFuture<SendResult<String, Object>> future = template.send("order-topic", order);
+		CompletableFuture<SendResult<String, Object>> future = template.send("orders", order);
 		future.whenComplete((result, ex) -> {
 			if(ex == null) {
 				System.out.println("Sent Order=[" + order + "] with offset=[" + result.getRecordMetadata().offset() + "]");
