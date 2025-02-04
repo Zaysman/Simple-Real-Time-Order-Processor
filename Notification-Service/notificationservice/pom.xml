@@ -54,6 +54,14 @@
 			<artifactId>spring-kafka-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- Add dependency for common module for objects-->
+		<dependency>
+    		<groupId>com.isaiah</groupId>
+    		<artifactId>common</artifactId>
+    		<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
